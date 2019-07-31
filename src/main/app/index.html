@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ToDo</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/superhero/bootstrap.min.css" rel="stylesheet" integrity="sha384-LS4/wo5Z/8SLpOLHs0IbuPAGOWTx30XSoZJ8o7WKH0UJhRpjXXTpODOjfVnNjeHu" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<h1>ToDo-tehtävälista</h1>
+
+<div id="container">
+
+    <button id="plusnappula" onclick="lisays()">+</button>
+    <table id="todo">
+        <tr></tr>
+
+    </table>
+
+</div>
+<br>
+<div id="lisays">
+    <form id="todoInputForm">
+        <div>
+            <p>Otsikko</p>
+            <input id="uusi" type="text"/>
+            <br>
+            <p>Lisätiedot</p>
+            <input id="lisatiedot" type="text" placeholder="Ei pakollinen..."/>
+            <br><br>
+            <p>Deadline <br><br>&nbsp&nbsp&nbsp&nbsp&nbsp päivämäärä &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp tunti&nbsp :&nbsp minuutit</p>
+            <input id="pvm" type="date"/>
+            <input id="tunti" type="number" min="0" max="23"/>
+            <input id="minuutti" type="number" min="0" max="59"/>
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+    <div id="postResult"></div>
+</div>
+
+<div>
+    <h3 id="valmisnappula" onclick="valmiit()">Valmiit ▼</h3>
+    <div id="valmiitdiv">
+        <table id="valmiit">
+            <tr></tr>
+
+        </table>
+    </div>
+
+</div>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="main.js"></script>
+<script>getRequest()</script>
+</body>
+</html>

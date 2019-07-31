@@ -1,0 +1,102 @@
+table {
+    border: 1px solid black;
+    table-layout: auto;
+    width: 80%;
+}
+
+body
+{background-color: darkblue;}
+
+h1 {
+    color: black;
+}
+
+h3 {
+    color: black;
+}
+
+input {
+    color: black;
+}
+
+input[type=text] {
+    background-color: lightgray;
+    color: black;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#more {
+    display: none;
+}
+
+.lisatiedot {
+    display: none;
+}
+
+#lisatiedot {
+    width: 60%;
+}
+
+#toiminnot {
+    float: right;
+    margin-left: 5px;
+}
+
+#plusnappula {
+    float: right;
+    margin-right: 20%;
+    margin-left: 5px;
+    padding: 4px;
+    width: 25px;
+}
+
+#lisays {
+    display: none;
+}
+
+#valmiitdiv {
+    display: none;
+}
+
+#valmiit {
+    width: 60%;
+}
+
+.muokkausClass {
+    display: none;
+}
+
+.muokkausTekstiClass {
+    width: 30%;
+}
+
+.aikatauluClass {
+    float: left;
+    margin-right: 200px;
+}
+
+.aikatauluClassMuutos {
+    float: left;
+    margin-right: 50px;
+    display: none;
+}
+
+#otsTehtava {
+    float: right;
+    margin-left: 5px;
+}
+
+#otsPvm {
+    float: right;
+    margin-left: 5px;
+}
+
+#otsKello {
+    float: right;
+    margin-left: 5px;
+    margin-right: 50%;
+}
